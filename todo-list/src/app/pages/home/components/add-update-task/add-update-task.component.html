@@ -1,0 +1,12 @@
+<h4 class="name fs24">
+  {{ editEnabled ? 'Edit a task' : 'Add a new task' }}
+</h4>
+<form 
+  class="full-width d-flex m-top10"
+  [formGroup]="addEditTaskForm"
+  (submit)="handleSubmit($event)">
+  <app-todo-input class="input m-right30" formControlName="name" [placeholder]="'sleep'"></app-todo-input>
+  <app-todo-primary-btn>
+    {{ editEnabled ? 'Edit todo' : 'Add todo' }}
+  </app-todo-primary-btn>
+</form>

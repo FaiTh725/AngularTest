@@ -1,0 +1,7 @@
+.input {
+  flex: 1;
+}
+
+.name {
+  color: var(--primary-blue-color);
+}

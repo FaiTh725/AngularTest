@@ -1,0 +1,19 @@
+<div class="page-content">
+  <app-add-task 
+    (addTask)="addTask($event)" 
+    (editTask)="editTask($event)"
+    [taskToEdit]="taskToEdit" 
+    ></app-add-task>
+  <app-task-list 
+    class="tasks m-top30" 
+    [tasks]="tasks" 
+    [checkedTasks]="checkedTasks"
+    (deleteTask)="deleteTask($event)"
+    (editTask)="startEditTask($event)"
+    (selectTask)="selectTask($event)"></app-task-list>
+  @if (checkedTasks.size !== 0) {
+    <app-todo-danger-btn class="m-top60" (btnClick)="deleteSelectedTasks()">
+      Deleted selected
+    </app-todo-danger-btn>
+  }
+</div>

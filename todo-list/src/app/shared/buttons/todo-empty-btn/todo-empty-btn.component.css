@@ -1,0 +1,7 @@
+.empty-btn {
+  cursor: pointer;
+}
+
+.empty-btn:hover {
+  background-color: transparent;
+}

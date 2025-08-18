@@ -1,0 +1,12 @@
+<h2 class="m-top30 fs36 d-flex align-center content-center">Task list</h2>
+<div class="m-top30">
+  @for (task of tasks; track task.id) {
+    <app-task-item 
+      class="task-list-task" 
+      [task]="task"
+      [isChecked]="checkedTasks.has(task.id)"
+      (deleteTask)="deleteTask.emit($event)"
+      (editTask)="editTask.emit($event)"
+      (selectTask)="selectTask.emit($event)"></app-task-item>
+  }
+</div>

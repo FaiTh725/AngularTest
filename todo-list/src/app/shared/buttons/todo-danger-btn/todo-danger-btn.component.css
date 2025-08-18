@@ -1,0 +1,5 @@
+.danged-btn {
+  color: var(--primary-white-color);
+  background-color: var(--primary-red-color);
+  padding: 16px;
+}
