@@ -1,0 +1,17 @@
+<div class="page-content">
+  <div class="switch-theme m-top60 full-width">
+    <div class="switch-theme-wrapper">
+      <app-switch-theme></app-switch-theme>
+    </div>
+  </div>
+  <div class="github-search m-top60">
+    <h2 class="m-bot30">GitHub info</h2>
+    <app-todo-search [placeholder]="'Search name...'" (search)="search($event)"></app-todo-search>
+    @if (searchedGitHubUser) {
+      <app-github-profile class="m-top30" [gitHubUser]="searchedGitHubUser"></app-github-profile>
+    }
+    @else if(searchText !== '') {
+      <p class="m-top30">User not found</p>
+    }
+  </div>
+</div>

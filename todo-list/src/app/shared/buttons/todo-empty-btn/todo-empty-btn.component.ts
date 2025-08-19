@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Output, output } from
   selector: 'app-todo-empty-btn',
   imports: [],
   template: `
-    <button class="empty-btn" 
+    <button class="full-size empty-btn" 
       (click)="btnClick.emit($event)">
       <ng-content></ng-content>
     </button>

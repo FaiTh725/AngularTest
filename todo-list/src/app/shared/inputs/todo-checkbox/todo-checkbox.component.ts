@@ -22,7 +22,7 @@ import { TodoEmptyBtnComponent } from "../../buttons/todo-empty-btn/todo-empty-b
       } 
       @else {
         <svg width="38" height="35" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" width="29" height="29" rx="4.5" fill="#FFFEFE" stroke="black"/>
+          <rect x="0.5" y="0.5" width="29" height="29" rx="4.5" fill="none" stroke="black"/>
         </svg>
       }
     </app-todo-empty-btn>

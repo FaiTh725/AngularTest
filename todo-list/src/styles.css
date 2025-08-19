@@ -1,7 +1,6 @@
-@import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
+:root[data-theme='light'] {
   --primary-blue-color: #3E50B5;
   --primary-gray-color: #646464;
   --primary-white-color: #FFFFFF;
@@ -11,9 +10,20 @@
   --max-content-width: 1200px
 }
 
+:root[data-theme='black'] {
+  --primary-blue-color: #FFFFFF;
+  --primary-gray-color: #b1bbf0;
+  --primary-white-color: #3E50B5;
+  --primary-black-color: #FFFFFF;
+  --primary-red-color: #FF4081;
+
+  --max-content-width: 1200px
+}
+
 body {
   font-weight: 400;
   font-family: "Jost", sans-serif;
+  background-color: var(--primary-white-color);
 }
 
 
@@ -69,6 +79,18 @@ body {
   margin-right: 30px;
 }
 
+.m-bot10 {
+  margin-bottom: 10px;
+}
+
+.m-bot30 {
+  margin-bottom: 30px;
+}
+
+.m-left30 {
+  margin-left: 30px;
+}
+
 /* padding */
 
 .p-bot10 {
@@ -90,6 +112,10 @@ body {
 
 .fs24 {
   font-size: 24px;
+}
+
+.fs22 {
+  font-size: 22px;
 }
 
 .fs18 {

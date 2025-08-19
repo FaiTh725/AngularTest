@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { LogoComponent } from "../../shared/logo/logo.component";
-import { Router, RouterLink, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { NgClass } from '@angular/common';
 
 export interface RouteNavigation {
@@ -11,7 +11,7 @@ export interface RouteNavigation {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [LogoComponent, RouterOutlet, RouterLink, NgClass],
+  imports: [LogoComponent, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -28,9 +28,9 @@ export class HeaderComponent {
     },
   ];
 
-  selectedRoute: string = '/';
+  private readonly router: Router = inject(Router);
 
-  route(route: string): void {
-    this.selectedRoute = route;
+  isSelectedPage(route: string): boolean {
+    return this.router.url.startsWith(route);
   }
 }

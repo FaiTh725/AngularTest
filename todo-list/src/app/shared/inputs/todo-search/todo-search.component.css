@@ -1,9 +1,9 @@
 .input {
-  padding: 5px;
-  border-bottom: 2px solid transparent;
+  flex: 1;
+  padding: 10px;
+  border-bottom: 1px solid var(--primary-gray-color);
   transition: all .3s;
-  background-color: var(--primary-white-color);
-  caret-color: var(--primary-black-color);
+  background-color: transparent;
   color: var(--primary-black-color);
 }
 
@@ -15,6 +15,6 @@
   color: var(--primary-gray-color);
 }
 
-.error {
-  color: var(--primary-red-color);
+.search-img {
+  display: block;
 }

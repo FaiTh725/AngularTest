@@ -1,0 +1,12 @@
+
+.header-text {
+  color: var(--primary-gray-color);
+}
+
+.avatar {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 500px;
+  height: 500px;
+}

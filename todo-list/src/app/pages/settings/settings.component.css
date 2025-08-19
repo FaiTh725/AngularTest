@@ -1,3 +1,8 @@
-:host {
-  display: block;
+.github-search {
+  display: inline-block;
+  color: var(--primary-gray-color);
+}
+
+.switch-theme-wrapper {
+  display: inline-block;
 }

@@ -1,5 +1,6 @@
 .empty-btn {
   cursor: pointer;
+  background-color: transparent;
 }
 
 .empty-btn:hover {
