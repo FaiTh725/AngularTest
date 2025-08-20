@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angul
   standalone: true,
   imports: [],
   template: `
-    <button class="danged-btn r18 fs28" (click)="btnClick.emit($event)">
+    <button class="danged-btn full-width r18 fs28" (click)="btnClick.emit($event)">
       <ng-content></ng-content>
     </button>
   `,

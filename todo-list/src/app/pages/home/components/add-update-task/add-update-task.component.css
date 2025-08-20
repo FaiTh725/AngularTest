@@ -5,3 +5,13 @@
 .name {
   color: var(--primary-blue-color);
 }
+
+.form {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .form {
+    display: block;
+  }
+}

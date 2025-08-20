@@ -1,16 +1,6 @@
 <div class="header fs36 full-width d-flex align-center content-between ">
   <app-logo/>
-  
-  <ul class="navigation d-flex align-center">
-    @for (item of routes; track $index) {
-      <li class="navigation-item p-bot10"
-        [routerLink]="item.route"
-        routerLinkActive="navigation-item__selected"
-        [routerLinkActiveOptions]="{ exact: true }">
-        {{ item.name }}
-      </li>
-    }
-  </ul>
+  <app-header-navigation [navigations]="routes"></app-header-navigation>
 </div>
 <div class="m-top30">
   <router-outlet></router-outlet>

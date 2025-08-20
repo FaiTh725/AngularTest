@@ -1,17 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { LogoComponent } from "../../shared/logo/logo.component";
-import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { NgClass } from '@angular/common';
-
-export interface RouteNavigation {
-  name: string,
-  route: string
-}
+import { Router, RouterOutlet } from '@angular/router';
+import { RouteNavigation, HeaderNavigationComponent } from './components/header-navigation/header-navigation.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [LogoComponent, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [LogoComponent, RouterOutlet, HeaderNavigationComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

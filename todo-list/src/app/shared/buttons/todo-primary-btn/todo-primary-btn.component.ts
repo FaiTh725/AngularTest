@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angul
   imports: [],
   template: `
     <button
-      class="todo-btn fs24 d-flex content-between align-center r18"
+      class="todo-btn fs24 full-width r18"
       (click)="btnClick.emit($event)">
       <ng-content></ng-content>
     </button>
